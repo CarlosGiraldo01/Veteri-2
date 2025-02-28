@@ -3,6 +3,28 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", serif;
+    
+}
+.encabezado {
+    background-color: rgb(30, 30, 214);
+    position: sticky;
+    color: white;
+    height: 40px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container2 {
+    margin-left: 10%;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        left: 20px;
+        font-size: 20px;
+        padding-right: 20px;
+        padding-left: 0px;
+    }
 }
 
 .menu { 
@@ -55,7 +77,6 @@ zx
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
     padding-top: 100px;
     height: 450px ;
     background-color: red;
@@ -63,6 +84,14 @@ zx
 
     h1, p{
         color:white;
+        position: relative;
+        z-index: 2;
+    }
+    .img2 {
+            position: relative;
+            z-index: 1;
+            width: 10%;
+            height: 10%;
     }
 
     button {
@@ -74,6 +103,8 @@ zx
         background-color: #018ae0;
         border-radius: 25px;
         border: none;
+        position: relative;
+        z-index: 2;
     }
 
     img{
@@ -90,19 +121,25 @@ cajita {
     background-color: white;
     margin: auto;
 }
+huella {
+    width: 10px;
+    height: 10px;
+}
 .quality {
     display: flexbox;
     justify-content: flex-end;
     gap: 20px;
     padding-bottom: 20px;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-right: 500px;
-
     h2, p {
         color: #333;
         text-align: left;
+        left: 100px;
         justify-content: center;
         align-self: center;
+        position: relative;
+        z-index: 2;
     }
     button {
         color: white;
@@ -114,19 +151,19 @@ cajita {
         border-radius: 25px;
         border: none;
         position: absolute;
+        z-index: 2;
         right: 15px;
-        top: 109%;
-        right: 26%;
+        top: 112%;
+        right: 19%;
     }
-    img2 {
-        display: inline;
-        max-width: 50%;
-        left: 500%;
-        right: 400%;
+    .imagen {
         position: absolute;
-        text-align: center;
-    }
-    
+        z-index: 1;
+        width: 220px;
+        height: 200px;
+        top: 600px;
+        left: 1050px;
+    }   
 }
 .servicio {
     display: flex;
@@ -140,7 +177,7 @@ cajita {
     top: 916px;
     bottom: 1px;
     width: 409px;
-    height: 91px;
+    height: 150px;
     text-align: center;
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
@@ -195,7 +232,7 @@ cajita {
     top: 916px;
     bottom: 1px;
     width: 438px;
-    height: 91px;
+    height: 150px;
     text-align: center;
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
@@ -244,4 +281,56 @@ cajita {
     left: 106px;
     top: 23px;
     opacity: 0.5;
+}
+#cuadritos3 {
+    left: 847px;
+    top: 916px;
+    bottom: 1px;
+    width: 409px;
+    height: 150px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
+.linea-izquierda3 {
+    height: 2.5px;
+    width: 38px;
+    margin-left: 5px;
+    background-color: rgb(179, 167, 167);
+    position: relative;
+    z-index: 3;
+    left: 106px;
+    top: 25px;
+    opacity: 0.5;
+}
+.linea-derecha3 {
+    height: 2px;
+    width: 38px;
+    margin-left: 155px;
+    background-color: rgb(179, 167, 167);
+    position: relative;
+    z-index: 3;
+    left: 106px;
+    top: 23px;
+    opacity: 0.5;
+}
+.fa-location-pin {
+    margin-right: 1px;
+    padding-right: 0px;
+    font-size: 18px;
+}
+.fa-envelope {
+    margin-right: 1px;
+    padding-right: 0px;
+    font-size: 18px;
+}
+.fa-phone-flip {
+    margin-right: 1px;
+    padding-right: 0px;
+    font-size: 18px;
+}
+.fa-facebook-f {
+    margin-left: 150px;
 }
