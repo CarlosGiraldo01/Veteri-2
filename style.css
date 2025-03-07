@@ -5,6 +5,7 @@
     font-family: "Montserrat", serif;
 }
 .encabezado {
+    display: flex;
     background-color: rgb(30, 30, 214);
     position: sticky;
     color: white;
@@ -84,24 +85,24 @@ zx
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    justify-content: flex-end;
+    padding-top: 150px;
     height: 450px ;
     background-color: rgb(41, 9, 224);
-    background-image: url("Fondo.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Fondo.jpeg");
     gap: 20px;
     position: relative;
     z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
     
-    h1, p{
+    h1 {
         color:white;
         position: relative;
-        z-index: 3;
+        text-transform: uppercase;
     }
-    .img2 {
-            position: relative;
-            z-index: 3;
-            width: 15%;
-            height: 15%;
+    p {
+        color: white;
     }
 
     button {
@@ -119,7 +120,7 @@ zx
 
     img{
         max-width: 70%;
-        max-height: 55%;
+        max-height: 70%;
     }
 }
 cajita {
@@ -182,6 +183,7 @@ huella {
     margin: auto;
     height: 272px;
     width: 272px;
+    background-size: cover;
 }
 #cuadritos {
     top: 916px;
